@@ -1,0 +1,1 @@
+export {AllNews} from './components/AllNews'

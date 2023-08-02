@@ -1,0 +1,12 @@
+.footer{
+width: 100%;
+height: 30px;
+background-color: var(--footerColor);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container{
+    width: var(--container);
+    text-align: end;
+}

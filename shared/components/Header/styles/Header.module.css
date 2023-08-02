@@ -1,0 +1,26 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--headerColor);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+
+    transition: background 0.1s linear;
+}
+.container{
+    width: var(--container);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.link{
+    color: var(--white);
+    font-size: 25px;
+}

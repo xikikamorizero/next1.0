@@ -1,0 +1,1 @@
+export {TheFoooter} from './components/Footer'
