@@ -1,3 +1,6 @@
 export * from './Footer'
 export * from './Header'
 export * from './News'
+export * from './GridContainer'
+export * from './NewsPage'
+export * from './Preloader'

@@ -6,19 +6,19 @@ export default function UsersReact() {
 
     const [users, setUsers] = useState<any>([]);
     
-    useEffect(() => {
-        const fetchData = async () => {
-          try {
-            const response = await News.TopStories({limit:10});
-            const data = await response;
-            setUsers(data);
-          } catch (error) {
-            console.error('Error fetching artists:', error);
-          }
-        };
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //       try {
+    //         const response = await News.TopStories({limit:10});
+    //         const data = await response;
+    //         setUsers(data);
+    //       } catch (error) {
+    //         console.error('Error fetching artists:', error);
+    //       }
+    //     };
     
-        fetchData();
-      }, []);
+    //     fetchData();
+    //   }, []);
       
       console.log(users)
   

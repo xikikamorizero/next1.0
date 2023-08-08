@@ -1,0 +1,55 @@
+.container{
+width: 100%;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+gap:0.5vw;
+
+text-align: start;
+
+cursor: pointer;
+}
+.title{
+    display: flex;
+    align-items: center;
+font-size: 20px;
+
+overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 2;
+
+    color:black;
+}
+.description{
+    font-size: 15px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 3;
+
+    color:black;
+}
+.container img{
+    width: 100%;
+    height: 15vw;
+    
+    &:hover{
+        opacity: 0.9;
+        transition: opacity 0.3s linear;
+    }
+}
+
+@media(max-width:1114px) {
+    .title{
+font-size: 15px;
+    }
+    .description{
+font-size: 10px;
+    }
+}

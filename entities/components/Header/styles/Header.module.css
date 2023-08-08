@@ -1,0 +1,17 @@
+.container{
+    width: 60%;
+    min-width: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.item{
+    color: var(--white);
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        border-bottom: 1px solid var(--white);
+    }
+}

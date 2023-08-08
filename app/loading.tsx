@@ -1,9 +1,7 @@
-import styles from './page.module.css'
-
-export default function Home() {
+export default function Preloader() {
   return (
-    <div>
-        Loading...
+    <div className={'preloader'}>
+     <div className={'loader'} />
     </div>
   )
 }

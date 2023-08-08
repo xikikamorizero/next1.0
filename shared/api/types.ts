@@ -19,7 +19,7 @@ export interface ParamsAllNews extends Params {
     pageSize?: number;
     page?: number;
 }
-type categories =
+export type categories =
     | "business"
     | "entertainment"
     | "general"
@@ -29,8 +29,8 @@ type categories =
     | "technology";
 export interface ParamsTopHeadlines extends Params {
     q?: string;
-    country: "";
-    category?: categories;
+    country?: string;
+    category?: categories | null;
     pageSize?: number;
     page?: number;
 }

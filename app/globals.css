@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-align: start;
 }
 
 html,
@@ -17,8 +18,8 @@ a {
 }
 
 .center{
-  min-height: 100vh;
-  padding-top: 60px;
+  min-height: calc(100vh - 30px);
+  padding-top: 56px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,9 +30,76 @@ a {
 
 :root{
   --container:90%;
-  --mainColor:#171717f3;
-  --mainColorOn:#242424;
-  --headerColor:rgba(67, 67, 67, 0.329);
-  --footerColor:#2c2b2b9e;
+  --mainColor:#fffdfdc2;
+  --mainColorOn:#000000;
+  --headerColor:rgb(0, 0, 0);
+  --footerColor:#2c2b2bf6;
   --white:#fff;
+  --hover:#ffffffbd;
+}
+
+/* Loader */
+.preloader{
+  width: 100%;
+  height: calc(100vh - 86px);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader{
+  width: 200px;
+  height: 200px;
+
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px; /* Ширина анимации */
+  height: 60px; /* Высота анимации */
+  border: 5px solid #7a7a7a; /* Цвет обводки анимации */
+  border-top-color: #000; /* Цвет верхней обводки анимации */
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Анимация вращения */
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Loading */
+.preloader{
+  width: 100%;
+  height: calc(100vh - 86px);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader{
+  width: 200px;
+  height: 200px;
+
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px; /* Ширина анимации */
+  height: 60px; /* Высота анимации */
+  border: 5px solid #7a7a7a; /* Цвет обводки анимации */
+  border-top-color: #000; /* Цвет верхней обводки анимации */
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Анимация вращения */
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
 }

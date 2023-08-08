@@ -1,4 +1,4 @@
-import { AllNews } from "@/widgets/AllNews";
+
 import { Metadata } from "next";
 
 export const metadata:Metadata={
@@ -7,9 +7,10 @@ export const metadata:Metadata={
 }
 
 export default function News(){
+
     return(
         <div>
-<AllNews />
+
         </div>
     )
 }
