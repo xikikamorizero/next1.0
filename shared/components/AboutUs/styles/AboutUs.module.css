@@ -1,0 +1,26 @@
+.container{
+width: 100%;
+display: flex;
+justify-content: center;
+padding-top: 2vw;
+}
+.aboutUs{
+    width: var(--container);
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    }
+.containerInfo{
+width: 100%;
+display: flex;
+flex-direction: column;
+gap:10px;
+}
+.title{
+font-size: 25px;
+color: black;
+}
+.text{
+    font-size: 20px;
+    color: black;
+}

@@ -1,6 +1,5 @@
-import styled from "./page.module.css";
+import { AboutUs } from '@/shared/components';
 import type { Metadata } from 'next'
-// import { useRouter } from 'next/router'
 
 export const metadata: Metadata = {
     title: 'Next 1.0 | AboutUs',
@@ -8,10 +7,9 @@ export const metadata: Metadata = {
   }
 
 export default function About() {
-    // const router = useRouter()
     return (
-        <div className={styled.about}>
-            <div className={styled.container}>About Us</div>
+        <div>
+            <AboutUs />
         </div>
     );
 }

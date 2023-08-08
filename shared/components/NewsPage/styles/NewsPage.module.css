@@ -19,14 +19,13 @@ align-items: center;
 }
 .windowNews{
 width: 600px;
-
 background-color: black;
-
 padding: 2vw;
-
-@media (max-width:670px) {
-    padding:5%;
 }
+@media (max-width:670px) {
+  .windowNews{
+    padding:5%;
+  } 
 }
 .exit{
     width: 30px;

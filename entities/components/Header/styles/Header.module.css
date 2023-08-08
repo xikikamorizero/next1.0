@@ -14,10 +14,9 @@
     text-transform: uppercase;
     cursor: pointer;
     border: 1px solid black;
-    
-    &:hover {
-      border-bottom: 1px solid var(--white);
-    }
+}
+.item:hover{
+  border-bottom: 1px solid var(--white);
 }
 
 .containerMain{

@@ -19,7 +19,6 @@ a {
 
 .center{
   min-height: calc(100vh - 30px);
-  padding-top: 56px;
 }
 
 @media (prefers-color-scheme: dark) {
