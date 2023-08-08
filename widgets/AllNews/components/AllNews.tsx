@@ -9,7 +9,7 @@ export const AllNews=observer(()=> {
     const list = useAllNews()
     return (
         <div>
-{list.map((news,i)=><NewsItem title={news.title} description={news.description} key={i} />)}        
+{/* {list.map((news,i)=><NewsItem description={news.description} key={i} />)}         */}
         </div>
     );
 })
