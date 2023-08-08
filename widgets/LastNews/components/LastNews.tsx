@@ -4,7 +4,7 @@ import { useLastNews } from "../lib/hook";
 import { NewsItem } from "@/shared/components";
 import { GridContainer } from "@/shared/components";
 import { observer } from "mobx-react-lite";
-import { useState } from "react";
+import {useState } from "react";
 import styled from "styled-components";
 import * as types from "../../../shared/api/types";
 import { Preloader } from "@/shared/components";
@@ -19,7 +19,7 @@ export const LastNews = observer(() => {
     if (loader == true) return <Preloader />;
 
     if (list.length === 0 || list.length === undefined) {
-        return <div>Новостей нет</div>;
+        return <NotFount>Новостей нет</NotFount>;
     }
 
     const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
@@ -29,7 +29,7 @@ export const LastNews = observer(() => {
     return (
         <Container page={page}>
             <TitleContainer>
-                <Title>Последние новостивdd </Title>
+                <Title>Последние новости </Title>
                 <Input
                     type="text"
                     placeholder={"Поиск"}
@@ -78,3 +78,9 @@ const Input = styled.input`
     padding: 5px;
     border-radius: 20px;
 `;
+//Not fount Page 
+const NotFount = styled.div`
+    color:black;
+    font-size: 30px;
+    padding-top: 2vw;
+`
