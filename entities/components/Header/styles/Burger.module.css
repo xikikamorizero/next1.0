@@ -1,0 +1,30 @@
+.containerBurger{
+    width: 110vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.853);
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    top:0;
+    left: 50%;
+    transform: translate(-50%);
+    transition: opacity 0.3s linear;
+}
+
+.burger{
+    width: 450px;
+    height: 100vh;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    transition: width 0.3s linear;
+
+    position: relative;
+
+    background-color: black;
+
+    -webkit-box-shadow: -15px 1px 10px -10px rgba(47, 50, 51, 0.2);
+-moz-box-shadow: -15px 1px 10px -10px rgba(47, 50, 51, 0.2);
+box-shadow: -15px 1px 10px -10px rgba(47, 50, 51, 0.2);
+}
