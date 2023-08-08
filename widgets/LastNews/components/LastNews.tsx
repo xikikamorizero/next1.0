@@ -64,19 +64,25 @@ const Title = styled.div`
     width: max-content;
     color: black;
     font-size: 30px;
-    margin-bottom: 2vw;
+    font-weight: 600;
+
+    @media (max-width:550px) {
+        font-size: 20px;
+    }
 `;
 const TitleContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    
+    margin: 2vw 0 1.5vw 0;
 `;
 const Input = styled.input`
     min-width: 120px;
     width: 13%;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
 `;
 //Not fount Page 
 const NotFount = styled.div`
